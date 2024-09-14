@@ -2,7 +2,7 @@
 
 ## Purpose of Development
 
-Developed for interview purpose and Laravel GitHub API test purpose.
+Developed for specially ThemeXpert
 
 
 ## Code of Conduct
