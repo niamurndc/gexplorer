@@ -9,21 +9,21 @@
                 <form action="{{route('update.profile')}}" method="post" enctype="multipart/form-data"> @csrf 
                 <h3 class="border-bottom border-secondary mb-3">Profile</h3>
                 <div class="mb-3 row">
-                    <label for="name" class="col-sm-3 text-end col-form-label">Name</label>
+                    <label for="name" class="col-sm-3 text-start text-md-end col-form-label">Name</label>
                     <div class="col-sm-9">
                     <input type="text" readonly class="form-control form-control-sm" value="{{$user->name}}" id="name">
                     </div>
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="github_id" class="col-sm-3 text-end col-form-label">Github ID</label>
+                    <label for="github_id" class="col-sm-3 text-start text-md-end col-form-label">Github ID</label>
                     <div class="col-sm-9">
                     <input type="text" readonly class="form-control form-control-sm" value="{{$user->github_id}}" id="github_id">
                     </div>
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="email" class="col-sm-3 text-end col-form-label">Email</label>
+                    <label for="email" class="col-sm-3 text-start text-md-end col-form-label">Email</label>
                     <div class="col-sm-9">
                     @if($user->email == null)
                     <span class="text-xs text-danger">Will not change after update</span>
