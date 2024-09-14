@@ -2,7 +2,7 @@
 
 ## Purpose of Development
 
-Developed for specially ThemeXpert
+Developed for Interview specially. This app using GitHub OAuth and GitHub API
 
 
 ## Code of Conduct
