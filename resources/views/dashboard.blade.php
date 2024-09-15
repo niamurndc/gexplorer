@@ -7,7 +7,7 @@
     <div class="card p-2 bg-dark border border-secondary">
         <div class="row mx-0">
             <div class="col-3 col-md-2 col-lg-1">
-                <div class="h-100 d-flex justify-content-center align-items-center">
+                <div class="h-100 d-flex justify-content-center align-items-start pt-2">
                     <img src="{{$user['avatar_url']}}" alt="profile-image" class="w-100 rounded">
                 </div>
             </div>
@@ -31,7 +31,7 @@
 
         <!-- repos count-->
         @if(count($repos) > 0)
-        <div class="col-md-4 text-end">Showing {{$active_page * $per_page - ($per_page - 1)}} to {{$total_repos < $active_page * $per_page ? $total_repos : $active_page * $per_page}} out of {{$total_repos}} repos</div>
+        <div class="col-md-4 text-end">{{$active_page * $per_page - ($per_page - 1)}} to {{$total_repos < $active_page * $per_page ? $total_repos : $active_page * $per_page}} out of {{$total_repos}}</div>
         @endif
         <!-- repos count end -->
     </div>
